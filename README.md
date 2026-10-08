@@ -19,11 +19,13 @@ ctest --test-dir build --output-on-failure
 ./build/bin/trama seed --db ./data/trama.sqlite --data-dir ./data
 ./build/bin/trama validate --db ./data/trama.sqlite
 ./build/bin/trama export --db ./data/trama.sqlite --output ./data/export.json
-./build/bin/trama-rsd --db ./data/trama.sqlite --host 127.0.0.1 --port 8080
+./build/bin/trama-rsd --db ./data/trama.sqlite --host 0.0.0.0 --port 8080
 curl -fsS http://127.0.0.1:8080/v1/health
 ```
 
-Abra `http://127.0.0.1:8080/` para o dashboard. A API é somente leitura e usa envelopes `data`/`meta`. Consultas por bioma retornam HTTP 409 enquanto a cobertura estiver incompleta; os dois registros disponíveis ficam isolados em `/v1/amostras`.
+O endereço padrão do daemon é `0.0.0.0:8080`, permitindo acesso pela rede local. Na própria máquina, abra `http://127.0.0.1:8080/`; em outro equipamento, use `http://IP_DA_MAQUINA:8080/`. A API é somente leitura e usa envelopes `data`/`meta`. Consultas por bioma retornam HTTP 409 enquanto a cobertura estiver incompleta; os dois registros disponíveis ficam isolados em `/v1/amostras`.
+
+Se o Fedora estiver com o `firewalld` ativo, libere a porta na zona da rede confiável conforme a política do ambiente. Para restringir novamente ao acesso local, informe `--host 127.0.0.1`.
 
 ## Componentes
 
