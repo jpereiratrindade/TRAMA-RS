@@ -1,0 +1,51 @@
+cmake_minimum_required(VERSION 3.25)
+project(TRAMA_RS VERSION 0.1.0 LANGUAGES CXX)
+
+option(TRAMA_CXX23_FALLBACK "Use C++23 explicitly when C++26 is unavailable" OFF)
+if(TRAMA_CXX23_FALLBACK)
+  set(CMAKE_CXX_STANDARD 23)
+else()
+  set(CMAKE_CXX_STANDARD 26)
+endif()
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
+find_package(SQLite3 REQUIRED)
+find_package(nlohmann_json 3.11 REQUIRED)
+
+add_library(trama-core src/domain.cpp)
+target_include_directories(trama-core PUBLIC include)
+target_compile_features(trama-core PUBLIC cxx_std_${CMAKE_CXX_STANDARD})
+
+add_library(trama-data src/database.cpp)
+target_include_directories(trama-data PUBLIC include)
+target_link_libraries(trama-data PUBLIC trama-core SQLite3::SQLite3 nlohmann_json::nlohmann_json)
+target_compile_definitions(trama-data PRIVATE TRAMA_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+
+add_library(trama-import src/importer.cpp)
+target_include_directories(trama-import PUBLIC include)
+target_link_libraries(trama-import PUBLIC trama-data nlohmann_json::nlohmann_json)
+
+add_library(trama-http src/http_server.cpp)
+target_include_directories(trama-http PUBLIC include)
+target_link_libraries(trama-http PUBLIC trama-data nlohmann_json::nlohmann_json)
+target_compile_definitions(trama-http PRIVATE TRAMA_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+
+add_executable(trama apps/trama/main.cpp)
+target_link_libraries(trama PRIVATE trama-import)
+add_executable(trama-rsd apps/trama-rsd/main.cpp)
+target_link_libraries(trama-rsd PRIVATE trama-http)
+add_executable(trama-verify apps/trama-verify/main.cpp)
+target_link_libraries(trama-verify PRIVATE trama-import)
+
+include(CTest)
+if(BUILD_TESTING)
+  add_executable(trama-tests tests/tests.cpp)
+  target_link_libraries(trama-tests PRIVATE trama-import)
+  target_compile_definitions(trama-tests PRIVATE TRAMA_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+  add_test(NAME trama-tests COMMAND trama-tests)
+endif()
+
+install(TARGETS trama trama-rsd trama-verify trama-core trama-data trama-import trama-http)
+install(DIRECTORY web data migrations DESTINATION share/trama-rs)

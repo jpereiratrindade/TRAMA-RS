@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "uf": "RS",
+  "estado": "PRELIMINAR_NAO_HOMOLOGADO",
+  "observacao": "Atribuicoes municipais baseadas em compilacao secundaria para prototipacao. Confrontar com planilha oficial Atlas; dois exemplos de bioma IBGE, demais pendentes.",
+  "fontes": [
+    {
+      "tipo": "regionalizacao_oficial",
+      "url": "https://atlassocioeconomico.rs.gov.br/regioes-funcionais-de-planejamento",
+      "arquivo": "https://atlassocioeconomico.rs.gov.br/upload/arquivos/202010/09172616-tabela-dos-municipios-por-corede-e-regiao-funcional-de-planejamento.xlsx",
+      "ano_referencia": 2020
+    },
+    {
+      "tipo": "seed_municipios_secundaria",
+      "url": "https://newikis.com/pt/Conselhos_Regionais_de_Desenvolvimento",
+      "licenca": "CC BY-SA 4.0",
+      "nota": "Revisar com fonte primaria antes de publicar como definitivo"
+    },
+    {
+      "tipo": "bioma_predominante_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Bioma_Predominante_por_Municipio_2024.csv",
+      "ano_referencia": 2024
+    },
+    {
+      "tipo": "biomas_presentes_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Lista_Municipio_Bioma_250mil.xls",
+      "ano_referencia": 2019
+    }
+  ],
+  "normalizacao": {
+    "municipio_id": "codigo_ibge (7 digitos, texto)",
+    "corede_id": "slug estavel interno; nao confundir com codigo oficial",
+    "regiao_funcional_id": "RF1 a RF9",
+    "bioma_id": "pampa | mata-atlantica"
+  },
+  "invariantes": {
+    "municipios": 497,
+    "coredes": 28,
+    "regioes_funcionais": 9,
+    "biomas": 2
+  },
+  "politica": "Fontes primarias prevalecem sobre compilacao secundaria; nao inferir bioma por COREDE e nao converter null em ausencia."
+}

@@ -1,0 +1,5010 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "uf": "RS",
+  "estado": "PRELIMINAR_NAO_HOMOLOGADO",
+  "observacao": "Atribuicoes municipais baseadas em compilacao secundaria para prototipacao. Confrontar com planilha oficial Atlas; dois exemplos de bioma IBGE, demais pendentes.",
+  "fontes": [
+    {
+      "tipo": "regionalizacao_oficial",
+      "url": "https://atlassocioeconomico.rs.gov.br/regioes-funcionais-de-planejamento",
+      "arquivo": "https://atlassocioeconomico.rs.gov.br/upload/arquivos/202010/09172616-tabela-dos-municipios-por-corede-e-regiao-funcional-de-planejamento.xlsx",
+      "ano_referencia": 2020
+    },
+    {
+      "tipo": "seed_municipios_secundaria",
+      "url": "https://newikis.com/pt/Conselhos_Regionais_de_Desenvolvimento",
+      "licenca": "CC BY-SA 4.0",
+      "nota": "Revisar com fonte primaria antes de publicar como definitivo"
+    },
+    {
+      "tipo": "bioma_predominante_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Bioma_Predominante_por_Municipio_2024.csv",
+      "ano_referencia": 2024
+    },
+    {
+      "tipo": "biomas_presentes_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Lista_Municipio_Bioma_250mil.xls",
+      "ano_referencia": 2019
+    }
+  ],
+  "total": 497,
+  "municipios": [
+    {
+      "nome": "Aceguá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Água Santa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Agudo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ajuricaba",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alecrim",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alegrete",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alegria",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Almirante Tamandaré do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alpestre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alto Alegre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alto Feliz",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Alvorada",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Amaral Ferrador",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ametista do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "André da Rocha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Anta Gorda",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Antônio Prado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arambaré",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Araricá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Aratiba",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio do Meio",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio do Padre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio do Sal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio do Tigre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio dos Ratos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arroio Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Arvorezinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Augusto Pestana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Áurea",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bagé",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Balneário Pinhal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barão de Cotegipe",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barão do Triunfo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barra do Guarita",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barra do Quaraí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barra do Ribeiro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barra do Rio Azul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barra Funda",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barracão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Barros Cassal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Benjamin Constant do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bento Gonçalves",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boa Vista das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boa Vista do Buricá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boa Vista do Cadeado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boa Vista do Incra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boa Vista do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bom Jesus",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bom Princípio",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bom Progresso",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bom Retiro do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Boqueirão do Leão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bossoroca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Bozano",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Braga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Brochier",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Butiá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Caçapava do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cacequi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cachoeira do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cachoeirinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cacique Doble",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Caibaté",
+      "codigo_ibge": "4303301",
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": "pampa",
+      "biomas_presentes_ids": [
+        "mata-atlantica",
+        "pampa"
+      ],
+      "classificacao_bioma_status": "exemplo_ibge_2024_interbiomas"
+    },
+    {
+      "nome": "Caiçara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Camaquã",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Camargo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cambará do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Campestre da Serra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Campina das Missões",
+      "codigo_ibge": "4303707",
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": "mata-atlantica",
+      "biomas_presentes_ids": [
+        "mata-atlantica",
+        "pampa"
+      ],
+      "classificacao_bioma_status": "exemplo_ibge_2024_interbiomas"
+    },
+    {
+      "nome": "Campinas do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Campo Bom",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Campo Novo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Campos Borges",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Candelária",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cândido Godói",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Candiota",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Canela",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Canguçu",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Canoas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Canudos do Vale",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capão Bonito do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capão da Canoa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capão do Cipó",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capão do Leão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capela de Santana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capitão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Capivari do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Caraá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Carazinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Carlos Barbosa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Carlos Gomes",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Casca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Caseiros",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Catuípe",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Caxias do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Centenário",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cerrito",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cerro Branco",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cerro Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cerro Grande do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cerro Largo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Chapada",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Charqueadas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Charrua",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Chiapetta",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Chuí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Chuvisca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cidreira",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ciríaco",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Colinas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Colorado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Condor",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Constantina",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coqueiro Baixo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coqueiros do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coronel Barros",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coronel Bicaco",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coronel Pilar",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cotiporã",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Coxilha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Crissiumal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cristal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cristal do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cruz Alta",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cruzaltense",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Cruzeiro do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "David Canabarro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Derrubadas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dezesseis de Novembro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dilermando de Aguiar",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dois Irmãos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dois Irmãos das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dois Lajeados",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dom Feliciano",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dom Pedrito",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dom Pedro de Alcântara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Dona Francisca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Doutor Maurício Cardoso",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Doutor Ricardo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Eldorado do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Encantado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Encruzilhada do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Engenho Velho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Entre-Ijuís",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Entre Rios do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Erebango",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Erechim",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ernestina",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Erval Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Erval Seco",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Esmeralda",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Esperança do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Espumoso",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Estação",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Estância Velha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Esteio",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Estrela",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Estrela Velha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Eugênio de Castro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Fagundes Varela",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Farroupilha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Faxinal do Soturno",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Faxinalzinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Fazenda Vilanova",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Feliz",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Flores da Cunha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Floriano Peixoto",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Fontoura Xavier",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Formigueiro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Forquetinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Fortaleza dos Valos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Frederico Westphalen",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Garibaldi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Garruchos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gaurama",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "General Câmara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gentil",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Getúlio Vargas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Giruá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Glorinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gramado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gramado dos Loureiros",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gramado Xavier",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Gravataí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Guabiju",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Guaíba",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Guaporé",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Guarani das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Harmonia",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Herval",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Herveiras",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Horizontina",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Hulha Negra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Humaitá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ibarama",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ibiaçá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ibiraiaras",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ibirapuitã",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ibirubá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Igrejinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ijuí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ilópolis",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Imbé",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Imigrante",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Independência",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Inhacorá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ipê",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ipiranga do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Iraí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itaara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itacurubi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itapuca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itaqui",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itati",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Itatiba do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ivorá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ivoti",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jaboticaba",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jacuizinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jacutinga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jaguarão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jaguari",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jaquirana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jari",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Jóia",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Júlio de Castilhos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lagoa Bonita do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lagoa dos Três Cantos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lagoa Vermelha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lagoão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lajeado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lajeado do Bugre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lavras do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campanha",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Liberato Salzano",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Lindolfo Collor",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Linha Nova",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Maçambará",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Machadinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mampituba",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Manoel Viana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Maquiné",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Maratá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Marau",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Marcelino Ramos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mariana Pimentel",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mariano Moro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Marques de Souza",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mata",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mato Castelhano",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mato Leitão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mato Queimado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Maximiliano de Almeida",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Minas do Leão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Miraguaí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Montauri",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Monte Alegre dos Campos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Monte Belo do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Montenegro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mormaço",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Morrinhos do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Morro Redondo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Morro Reuter",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Mostardas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Muçum",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Muitos Capões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Muliterno",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Não-Me-Toque",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nicolau Vergueiro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nonoai",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Alvorada",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Araçá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Bassano",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Boa Vista",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Bréscia",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Candelária",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Esperança do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Hartz",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Pádua",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Palma",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Petrópolis",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Prata",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Ramada",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Roma do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Nova Santa Rita",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Barreiro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Cabrais",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Hamburgo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Machado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Tiradentes",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Novo Xingu",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Osório",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Paim Filho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Palmares do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Palmeira das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Palmitinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Panambi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pantano Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Paraí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Paraíso do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pareci Novo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Parobé",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Passa-Sete",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Passo do Sobrado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Passo Fundo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Paulo Bento",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Paverama",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pedras Altas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pedro Osório",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pejuçara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "noroeste-colonial",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pelotas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Picada Café",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinhal",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinhal da Serra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinhal Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinheirinho do Vale",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinheiro Machado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pinto Bandeira",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pirapó",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Piratini",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Planalto",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Poço das Antas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pontão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ponte Preta",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Portão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Porto Alegre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Porto Lucena",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Porto Mauá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Porto Vera Cruz",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Porto Xavier",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Pouso Novo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Presidente Lucena",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Progresso",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Protásio Alves",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Putinga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Quaraí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Quatro Irmãos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Quevedos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Quinze de Novembro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Redentora",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Relvado",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Restinga Sêca",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rio dos Índios",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rio Grande",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rio Pardo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Riozinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Roca Sales",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rodeio Bonito",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rolador",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rolante",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ronda Alta",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rondinha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Roque Gonzales",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Rosário do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sagrada Família",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Saldanha Marinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Salto do Jacuí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Salvador das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Salvador do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sananduva",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sant'Ana do Livramento",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Bárbara do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Cecília do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Clara do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Cruz do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Margarida do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Maria",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Maria do Herval",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Rosa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Tereza",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santa Vitória do Palmar",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santana da Boa Vista",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santiago",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Ângelo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Antônio da Patrulha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Antônio das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Antônio do Palma",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Antônio do Planalto",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Augusto",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Cristo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Santo Expedito do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Borja",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Domingos do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Francisco de Assis",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Francisco de Paula",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "hortensias",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Gabriel",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Jerônimo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São João da Urtiga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São João do Polêsine",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Jorge",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Herval",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Hortêncio",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Inhacorá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Norte",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Ouro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São José dos Ausentes",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Leopoldo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Lourenço do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Luiz Gonzaga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Marcos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Martinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Martinho da Serra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Miguel das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Nicolau",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Paulo das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Pedro da Serra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Pedro das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Pedro do Butiá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Pedro do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Sebastião do Caí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Sepé",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Valentim",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Valentim do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Valério do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Vendelino",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "São Vicente do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sapiranga",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sapucaia do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-dos-sinos",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sarandi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Seberi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sede Nova",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Segredo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Selbach",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Senador Salgado Filho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sentinela do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Serafina Corrêa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sério",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sertão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sertão Santana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sete de Setembro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Severiano de Almeida",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Silveira Martins",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sinimbu",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Sobradinho",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Soledade",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tabaí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tapejara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tapera",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-jacui",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tapes",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "centro-sul",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Taquara",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Taquari",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Taquaruçu do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tavares",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tenente Portela",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Terra de Areia",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Teutônia",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tio Hugo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tiradentes do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Toropi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Torres",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tramandaí",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Travesseiro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Arroios",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Cachoeiras",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Coroas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "paranhana-encosta-da-serra",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três de Maio",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Forquilhas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Palmeiras",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "rio-da-varzea",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Três Passos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Trindade do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Triunfo",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tucunduva",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tunas",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tupanci do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tupanciretã",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "central",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tupandi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Tuparendi",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-noroeste",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Turuçu",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "sul",
+      "regiao_funcional_id": "RF5",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Ubiretama",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "União da Serra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Unistalda",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-jaguari",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Uruguaiana",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "fronteira-oeste",
+      "regiao_funcional_id": "RF6",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vacaria",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "campos-de-cima-da-serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vale do Sol",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vale Real",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-cai",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vale Verde",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vanini",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Venâncio Aires",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vera Cruz",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-rio-pardo",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Veranópolis",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vespasiano Corrêa",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Viadutos",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "norte",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Viamão",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "metropolitano-delta-do-jacui",
+      "regiao_funcional_id": "RF1",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vicente Dutra",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Victor Graeff",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "alto-da-serra-do-botucarai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vila Flores",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vila Lângaro",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "nordeste",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vila Maria",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "producao",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vila Nova do Sul",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "jacui-centro",
+      "regiao_funcional_id": "RF8",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vista Alegre",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "medio-alto-uruguai",
+      "regiao_funcional_id": "RF9",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vista Alegre do Prata",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "serra",
+      "regiao_funcional_id": "RF3",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vista Gaúcha",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "celeiro",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Vitória das Missões",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "missoes",
+      "regiao_funcional_id": "RF7",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Westfália",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "vale-do-taquari",
+      "regiao_funcional_id": "RF2",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    },
+    {
+      "nome": "Xangri-lá",
+      "codigo_ibge": null,
+      "uf": "RS",
+      "corede_id": "litoral",
+      "regiao_funcional_id": "RF4",
+      "bioma_predominante_id": null,
+      "biomas_presentes_ids": null,
+      "classificacao_bioma_status": "nao_integrado"
+    }
+  ]
+}

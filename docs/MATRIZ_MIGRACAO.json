@@ -1,0 +1,16 @@
+{
+  "documento": "TERRITORIO-RS-002",
+  "versao": "0.2.0",
+  "linguagem_destino": "C++26",
+  "python_na_execucao_producao": false,
+  "scripts_origem_arquivados_em": "legacy/python/",
+  "componentes": [
+    {"origem": "tools/prepare_seed.py", "destino": "territorio-rs seed", "tipo": "CLI C++26", "criterios": ["497 municipios", "28 COREDEs", "9 RFs", "idempotencia", "nulos preservados"]},
+    {"origem": "tools/integrar_oficiais.py", "destino": "territorio-rs import", "tipo": "CLI C++26", "criterios": ["XLSX Atlas", "CSV IBGE 2024", "XLS IBGE 2019 opcional", "falha fechada", "conciliacao", "proveniencia"]},
+    {"origem": "tools/empacotar_catalogo.py", "destino": "territorio-rs pack", "tipo": "CLI C++26", "criterios": ["JSON UTF-8", "manifest SHA-256", "saida deterministica"]},
+    {"origem": "tests/test_seed.py", "destino": "tests/ + CTest", "tipo": "testes C++26", "criterios": ["fixtures", "contagens", "duplicatas", "integridade", "completude"]},
+    {"origem": "GEMINI_IMPLEMENTACAO.md", "destino": "territorio-rsd + territorio-core", "tipo": "API e biblioteca C++26", "criterios": ["HTTP REST", "SQLite WAL", "interface web", "respostas com metadados"]}
+  ],
+  "documentacao_normativa": ["GEMINI_CPP26_CONVERSAO.md", "GEMINI_IMPLEMENTACAO.md"],
+  "estado_dados_origem": "PRELIMINAR_NAO_HOMOLOGADO"
+}

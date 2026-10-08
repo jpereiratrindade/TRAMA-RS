@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "arquivos": [
+    {
+      "nome": "coredes_regioes_funcionais.json",
+      "sha256": "56aaa6676184c4057008ac1d9fc9641878bb0a09050f11d7c9c0cd6c9ebff9a8",
+      "bytes": 7155
+    },
+    {
+      "nome": "municipios_coredes_preliminar.json",
+      "sha256": "016207b91a84974587dd4ddaebd63d4392edea15ca09208a3fb4359d9d7c287f",
+      "bytes": 142887
+    },
+    {
+      "nome": "biomas_rs.json",
+      "sha256": "d3ee31c19e17a176f4bda15baca963628b82948d3d71e453f7f7ce988e1e86a8",
+      "bytes": 917
+    },
+    {
+      "nome": "catalogo_fontes.json",
+      "sha256": "2cd3e056db51bdedc908c81a605cc2bb83301e9c8aebd62c1f69223f99b15f83",
+      "bytes": 1823
+    },
+    {
+      "nome": "catalogo_territorio_rs_preliminar.json",
+      "sha256": "cd532590063b056517049fb165660b1e21b0de6fbc3ce4d0336bcb1b9149c46a",
+      "bytes": 163672
+    }
+  ]
+}

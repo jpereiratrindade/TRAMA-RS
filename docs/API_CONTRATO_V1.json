@@ -1,0 +1,28 @@
+{
+  "documento": "TERRITORIO-RS-002",
+  "api_version": "v1",
+  "root": "/v1",
+  "publicacao": "somente leitura",
+  "formato_resposta": {"data": "object|array", "meta": {"schema_version": "string", "dataset_version": "string", "status_validacao": "string", "fonte": "object|null", "criterio": "string|null", "total": "integer|null"}},
+  "rotas": [
+    {"method": "GET", "path": "/v1/health", "funcao": "status operacional"},
+    {"method": "GET", "path": "/v1/catalogo", "funcao": "fontes e versoes de dados"},
+    {"method": "GET", "path": "/v1/regioes-funcionais", "funcao": "listar RFs"},
+    {"method": "GET", "path": "/v1/regioes-funcionais/{id}/coredes", "funcao": "COREDEs por RF"},
+    {"method": "GET", "path": "/v1/coredes", "funcao": "listar COREDEs"},
+    {"method": "GET", "path": "/v1/coredes/{id}/municipios", "funcao": "municipios por COREDE"},
+    {"method": "GET", "path": "/v1/municipios", "funcao": "filtrar por q, corede_id, regiao_funcional_id, bioma_id, criterio, limit, offset"},
+    {"method": "GET", "path": "/v1/municipios/{codigo_ibge}", "funcao": "municipio por geocodigo"},
+    {"method": "GET", "path": "/v1/biomas", "funcao": "vocabulário"},
+    {"method": "GET", "path": "/v1/biomas/{id}/municipios", "funcao": "municipios por bioma e criterio"},
+    {"method": "GET", "path": "/v1/estatisticas", "funcao": "indicadores de cobertura"},
+    {"method": "GET", "path": "/v1/amostras", "funcao": "exemplos de biomas claramente identificados sem insinuar completude"},
+    {"method": "GET", "path": "/", "funcao": "dashboard HTML local"}
+  ],
+  "politica_erros": {
+    "bioma_incompleto": {"http": 409, "code": "dados_bioma_incompletos"},
+    "nao_encontrado": {"http": 404, "code": "recurso_nao_encontrado"},
+    "parametro_invalido": {"http": 400, "code": "parametro_invalido"},
+    "snapshot_indisponivel": {"http": 503, "code": "catalogo_indisponivel"}
+  }
+}

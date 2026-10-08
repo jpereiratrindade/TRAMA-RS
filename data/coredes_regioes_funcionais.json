@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "uf": "RS",
+  "estado": "PRELIMINAR_NAO_HOMOLOGADO",
+  "observacao": "Atribuicoes municipais baseadas em compilacao secundaria para prototipacao. Confrontar com planilha oficial Atlas; dois exemplos de bioma IBGE, demais pendentes.",
+  "fontes": [
+    {
+      "tipo": "regionalizacao_oficial",
+      "url": "https://atlassocioeconomico.rs.gov.br/regioes-funcionais-de-planejamento",
+      "arquivo": "https://atlassocioeconomico.rs.gov.br/upload/arquivos/202010/09172616-tabela-dos-municipios-por-corede-e-regiao-funcional-de-planejamento.xlsx",
+      "ano_referencia": 2020
+    },
+    {
+      "tipo": "seed_municipios_secundaria",
+      "url": "https://newikis.com/pt/Conselhos_Regionais_de_Desenvolvimento",
+      "licenca": "CC BY-SA 4.0",
+      "nota": "Revisar com fonte primaria antes de publicar como definitivo"
+    },
+    {
+      "tipo": "bioma_predominante_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Bioma_Predominante_por_Municipio_2024.csv",
+      "ano_referencia": 2024
+    },
+    {
+      "tipo": "biomas_presentes_ibge",
+      "url": "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Lista_Municipio_Bioma_250mil.xls",
+      "ano_referencia": 2019
+    }
+  ],
+  "regioes_funcionais": [
+    {
+      "id": "RF1",
+      "numero": 1,
+      "coredes_ids": [
+        "centro-sul",
+        "metropolitano-delta-do-jacui",
+        "paranhana-encosta-da-serra",
+        "vale-do-cai",
+        "vale-do-rio-dos-sinos"
+      ]
+    },
+    {
+      "id": "RF2",
+      "numero": 2,
+      "coredes_ids": [
+        "vale-do-rio-pardo",
+        "vale-do-taquari"
+      ]
+    },
+    {
+      "id": "RF3",
+      "numero": 3,
+      "coredes_ids": [
+        "campos-de-cima-da-serra",
+        "hortensias",
+        "serra"
+      ]
+    },
+    {
+      "id": "RF4",
+      "numero": 4,
+      "coredes_ids": [
+        "litoral"
+      ]
+    },
+    {
+      "id": "RF5",
+      "numero": 5,
+      "coredes_ids": [
+        "sul"
+      ]
+    },
+    {
+      "id": "RF6",
+      "numero": 6,
+      "coredes_ids": [
+        "campanha",
+        "fronteira-oeste"
+      ]
+    },
+    {
+      "id": "RF7",
+      "numero": 7,
+      "coredes_ids": [
+        "celeiro",
+        "fronteira-noroeste",
+        "missoes",
+        "noroeste-colonial"
+      ]
+    },
+    {
+      "id": "RF8",
+      "numero": 8,
+      "coredes_ids": [
+        "alto-jacui",
+        "central",
+        "jacui-centro",
+        "vale-do-jaguari"
+      ]
+    },
+    {
+      "id": "RF9",
+      "numero": 9,
+      "coredes_ids": [
+        "alto-da-serra-do-botucarai",
+        "medio-alto-uruguai",
+        "nordeste",
+        "norte",
+        "producao",
+        "rio-da-varzea"
+      ]
+    }
+  ],
+  "coredes": [
+    {
+      "id": "centro-sul",
+      "nome": "Centro-Sul",
+      "regiao_funcional_id": "RF1",
+      "municipios_quantidade_preliminar": 17
+    },
+    {
+      "id": "metropolitano-delta-do-jacui",
+      "nome": "Metropolitano Delta do Jacuí",
+      "regiao_funcional_id": "RF1",
+      "municipios_quantidade_preliminar": 10
+    },
+    {
+      "id": "paranhana-encosta-da-serra",
+      "nome": "Paranhana-Encosta da Serra",
+      "regiao_funcional_id": "RF1",
+      "municipios_quantidade_preliminar": 10
+    },
+    {
+      "id": "vale-do-cai",
+      "nome": "Vale do Caí",
+      "regiao_funcional_id": "RF1",
+      "municipios_quantidade_preliminar": 19
+    },
+    {
+      "id": "vale-do-rio-dos-sinos",
+      "nome": "Vale do Rio dos Sinos",
+      "regiao_funcional_id": "RF1",
+      "municipios_quantidade_preliminar": 14
+    },
+    {
+      "id": "vale-do-rio-pardo",
+      "nome": "Vale do Rio Pardo",
+      "regiao_funcional_id": "RF2",
+      "municipios_quantidade_preliminar": 23
+    },
+    {
+      "id": "vale-do-taquari",
+      "nome": "Vale do Taquari",
+      "regiao_funcional_id": "RF2",
+      "municipios_quantidade_preliminar": 36
+    },
+    {
+      "id": "campos-de-cima-da-serra",
+      "nome": "Campos de Cima da Serra",
+      "regiao_funcional_id": "RF3",
+      "municipios_quantidade_preliminar": 10
+    },
+    {
+      "id": "hortensias",
+      "nome": "Hortênsias",
+      "regiao_funcional_id": "RF3",
+      "municipios_quantidade_preliminar": 7
+    },
+    {
+      "id": "serra",
+      "nome": "Serra",
+      "regiao_funcional_id": "RF3",
+      "municipios_quantidade_preliminar": 32
+    },
+    {
+      "id": "litoral",
+      "nome": "Litoral",
+      "regiao_funcional_id": "RF4",
+      "municipios_quantidade_preliminar": 21
+    },
+    {
+      "id": "sul",
+      "nome": "Sul",
+      "regiao_funcional_id": "RF5",
+      "municipios_quantidade_preliminar": 22
+    },
+    {
+      "id": "campanha",
+      "nome": "Campanha",
+      "regiao_funcional_id": "RF6",
+      "municipios_quantidade_preliminar": 7
+    },
+    {
+      "id": "fronteira-oeste",
+      "nome": "Fronteira Oeste",
+      "regiao_funcional_id": "RF6",
+      "municipios_quantidade_preliminar": 13
+    },
+    {
+      "id": "celeiro",
+      "nome": "Celeiro",
+      "regiao_funcional_id": "RF7",
+      "municipios_quantidade_preliminar": 21
+    },
+    {
+      "id": "fronteira-noroeste",
+      "nome": "Fronteira Noroeste",
+      "regiao_funcional_id": "RF7",
+      "municipios_quantidade_preliminar": 20
+    },
+    {
+      "id": "missoes",
+      "nome": "Missões",
+      "regiao_funcional_id": "RF7",
+      "municipios_quantidade_preliminar": 25
+    },
+    {
+      "id": "noroeste-colonial",
+      "nome": "Noroeste Colonial",
+      "regiao_funcional_id": "RF7",
+      "municipios_quantidade_preliminar": 11
+    },
+    {
+      "id": "alto-jacui",
+      "nome": "Alto Jacuí",
+      "regiao_funcional_id": "RF8",
+      "municipios_quantidade_preliminar": 14
+    },
+    {
+      "id": "central",
+      "nome": "Central",
+      "regiao_funcional_id": "RF8",
+      "municipios_quantidade_preliminar": 19
+    },
+    {
+      "id": "jacui-centro",
+      "nome": "Jacuí Centro",
+      "regiao_funcional_id": "RF8",
+      "municipios_quantidade_preliminar": 7
+    },
+    {
+      "id": "vale-do-jaguari",
+      "nome": "Vale do Jaguari",
+      "regiao_funcional_id": "RF8",
+      "municipios_quantidade_preliminar": 9
+    },
+    {
+      "id": "alto-da-serra-do-botucarai",
+      "nome": "Alto da Serra do Botucaraí",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 16
+    },
+    {
+      "id": "medio-alto-uruguai",
+      "nome": "Médio Alto Uruguai",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 22
+    },
+    {
+      "id": "nordeste",
+      "nome": "Nordeste",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 19
+    },
+    {
+      "id": "norte",
+      "nome": "Norte",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 32
+    },
+    {
+      "id": "producao",
+      "nome": "Produção",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 21
+    },
+    {
+      "id": "rio-da-varzea",
+      "nome": "Rio da Várzea",
+      "regiao_funcional_id": "RF9",
+      "municipios_quantidade_preliminar": 20
+    }
+  ]
+}

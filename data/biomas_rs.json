@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "uf": "RS",
+  "tipo": "biomas_terrestres_ibge",
+  "biomas": [
+    {
+      "id": "pampa",
+      "nome": "Pampa"
+    },
+    {
+      "id": "mata-atlantica",
+      "nome": "Mata Atlântica"
+    }
+  ],
+  "criterios": {
+    "predominante": "IBGE 2024: maior area do municipio",
+    "presenca": "IBGE 2019: todos os biomas que tocam o municipio; ano metodologicamente distinto",
+    "proporcao": "Nao disponivel nesta versao; exige intersecao geoespacial"
+  },
+  "fontes": [
+    "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/LEIA_ME_Sobre_a_relacao_entre_municipios_e_biomas.pdf",
+    "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Bioma_Predominante_por_Municipio_2024.csv",
+    "https://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/documentos/Lista_Municipio_Bioma_250mil.xls"
+  ]
+}
