@@ -21,6 +21,7 @@ std::map<std::string,std::string> query(const std::string& raw){std::map<std::st
 json meta(const json& data,const std::string& criterion=""){return {{"schema_version",schema_version},{"dataset_version","0.1.0"},{"status_validacao",preliminary_status},{"criterio",criterion.empty()?json(nullptr):json(criterion)},{"fonte",nullptr},{"total",data.is_array()?json(data.size()):json(nullptr)}};}
 std::string file(const std::filesystem::path& p){std::ifstream f(p);if(!f)return {};return {std::istreambuf_iterator<char>(f),{}};}
 struct Reply{int status=200;std::string type="application/json; charset=utf-8";std::string body;};
+bool send_all(int socket,const std::string& data){std::size_t sent=0;while(sent<data.size()){auto n=send(socket,data.data()+sent,data.size()-sent,0);if(n<=0)return false;sent+=static_cast<std::size_t>(n);}return true;}
 Reply api(Database& db,std::string target){
   auto qm=target.find('?');auto path=target.substr(0,qm);auto q=query(qm==std::string::npos?"":target.substr(qm+1));
   auto ok=[&](json d,std::string c=""){return Reply{200,"application/json; charset=utf-8",json{{"data",d},{"meta",meta(d,c)}}.dump()};};
@@ -33,6 +34,13 @@ Reply api(Database& db,std::string target){
   if(path=="/v1/biomas")return ok(db.biomes());
   if(path=="/v1/estatisticas")return ok(db.statistics());
   if(path=="/v1/amostras")return ok(db.samples(),"amostras_nao_representativas");
+  if(path.starts_with("/v1/mapa/")&&path.ends_with(".geojson")){
+    auto layer=path.substr(9,path.size()-9-8);
+    if(layer!="municipios"&&layer!="coredes"&&layer!="regioes-funcionais"&&layer!="biomas")return err(404,"recurso_nao_encontrado","camada cartográfica não encontrada");
+    auto raw=file(std::filesystem::path(TRAMA_SOURCE_DIR)/"data/map"/(layer+".geojson"));if(raw.empty())return err(503,"mapa_indisponivel","arquivo cartográfico não instalado");
+    auto geo=json::parse(raw);geo["metadata"]={{"layer",layer},{"crs","EPSG:4326"},{"simplified_for_web",true},{"source",layer=="biomas"?"IBGE Biomas e Sistema Costeiro-Marinho 1:250.000, 2025":"IBGE Malha Municipal Digital 2025"},{"regionalization_source",(layer=="coredes"||layer=="regioes-funcionais")?json("TRAMA-RS PRELIMINAR_NAO_HOMOLOGADO"):json(nullptr)},{"status_validacao",layer=="biomas"?"OFICIAL_IBGE_GEOMETRIA":preliminary_status}};
+    return {200,"application/geo+json; charset=utf-8",geo.dump()};
+  }
   if(path.starts_with("/v1/regioes-funcionais/")&&path.ends_with("/coredes")){constexpr std::string_view prefix="/v1/regioes-funcionais/";constexpr std::string_view suffix="/coredes";auto id=path.substr(prefix.size(),path.size()-prefix.size()-suffix.size());return ok(db.coredes(id));}
   if(path.starts_with("/v1/coredes/")&&path.ends_with("/municipios")){auto id=path.substr(12,path.size()-12-11);auto d=db.municipalities("",id,"",500,0);return ok(d);}
   if(path.starts_with("/v1/biomas/")&&path.ends_with("/municipios"))return err(409,"dados_bioma_incompletos","495 de 497 municípios não possuem classificação de bioma verificada; consulte /v1/amostras apenas para os exemplos identificados");
@@ -50,6 +58,6 @@ HttpServer::HttpServer(std::filesystem::path db,std::string host,int port):db_(s
 void HttpServer::run(){
   Database db(db_,true);int server=socket(AF_INET,SOCK_STREAM,0);if(server<0)throw std::runtime_error("socket falhou");int one=1;setsockopt(server,SOL_SOCKET,SO_REUSEADDR,&one,sizeof(one));sockaddr_in addr{};addr.sin_family=AF_INET;addr.sin_port=htons(port_);if(inet_pton(AF_INET,host_.c_str(),&addr.sin_addr)!=1)throw std::runtime_error("host IPv4 inválido");if(bind(server,reinterpret_cast<sockaddr*>(&addr),sizeof(addr))<0)throw std::runtime_error("bind falhou");if(listen(server,32)<0)throw std::runtime_error("listen falhou");std::cout<<"{\"event\":\"listening\",\"host\":\""<<host_<<"\",\"port\":"<<port_<<"}\n"<<std::flush;
   std::signal(SIGPIPE,SIG_IGN);
-  while(true){int client=accept(server,nullptr,nullptr);if(client<0)continue;char buf[16384];auto n=read(client,buf,sizeof(buf)-1);if(n>0){buf[n]=0;std::istringstream in(std::string(buf,n));std::string method,target,proto;in>>method>>target>>proto;Reply r=method=="GET"?api(db,target):Reply{405,"application/json; charset=utf-8",json{{"error",{{"code","metodo_nao_permitido"}}}}.dump()};std::string reason=r.status==200?"OK":r.status==400?"Bad Request":r.status==404?"Not Found":r.status==409?"Conflict":"Error";std::ostringstream out;out<<"HTTP/1.1 "<<r.status<<' '<<reason<<"\r\nContent-Type: "<<r.type<<"\r\nContent-Length: "<<r.body.size()<<"\r\nConnection: close\r\nX-Content-Type-Options: nosniff\r\n\r\n"<<r.body;auto s=out.str();send(client,s.data(),s.size(),0);}close(client);}
+  while(true){int client=accept(server,nullptr,nullptr);if(client<0)continue;char buf[16384];auto n=read(client,buf,sizeof(buf)-1);if(n>0){buf[n]=0;std::istringstream in(std::string(buf,n));std::string method,target,proto;in>>method>>target>>proto;Reply r=method=="GET"?api(db,target):Reply{405,"application/json; charset=utf-8",json{{"error",{{"code","metodo_nao_permitido"}}}}.dump()};std::string reason=r.status==200?"OK":r.status==400?"Bad Request":r.status==404?"Not Found":r.status==409?"Conflict":"Error";std::ostringstream out;out<<"HTTP/1.1 "<<r.status<<' '<<reason<<"\r\nContent-Type: "<<r.type<<"\r\nContent-Length: "<<r.body.size()<<"\r\nConnection: close\r\nX-Content-Type-Options: nosniff\r\n\r\n"<<r.body;send_all(client,out.str());}close(client);}
 }
 }

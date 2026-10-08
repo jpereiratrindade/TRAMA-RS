@@ -27,6 +27,19 @@ O endereço padrão do daemon é `0.0.0.0:8080`, permitindo acesso pela rede loc
 
 Se o Fedora estiver com o `firewalld` ativo, libere a porta na zona da rede confiável conforme a política do ambiente. Para restringir novamente ao acesso local, informe `--host 127.0.0.1`.
 
+### Mapas
+
+O serviço fornece camadas GeoJSON simplificadas em EPSG:4326:
+
+```text
+/v1/mapa/municipios.geojson
+/v1/mapa/coredes.geojson
+/v1/mapa/regioes-funcionais.geojson
+/v1/mapa/biomas.geojson
+```
+
+Municípios e biomas vêm das malhas oficiais IBGE 2025. COREDEs e Regiões Funcionais são uniões dos municípios conforme a regionalização preliminar registrada e, portanto, mantêm o estado `PRELIMINAR_NAO_HOMOLOGADO`. Consulte [data/map/README.md](data/map/README.md) para fontes, hashes e método.
+
 ## Componentes
 
 - `trama-core`: tipos e regras de domínio;
