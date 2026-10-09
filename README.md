@@ -14,6 +14,22 @@ ctest --test-dir build --output-on-failure
 
 ## Executar
 
+Forma simples — compila, cria o banco na primeira execução e inicia o serviço:
+
+```sh
+./start.sh
+```
+
+Configuração opcional por ambiente:
+
+```sh
+TRAMA_HOST=127.0.0.1 TRAMA_PORT=9090 ./start.sh
+```
+
+Também são aceitas `TRAMA_DB`, `TRAMA_BUILD_DIR`, `TRAMA_BUILD_JOBS`, `CMAKE_BUILD_TYPE` e `TRAMA_CXX23_FALLBACK`. O banco existente é preservado nas execuções seguintes.
+
+Comandos individuais, para desenvolvimento e manutenção:
+
 ```sh
 ./build/bin/trama init --db ./data/trama.sqlite
 ./build/bin/trama seed --db ./data/trama.sqlite --data-dir ./data
