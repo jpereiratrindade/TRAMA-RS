@@ -5,6 +5,7 @@
 #include <string>
 
 namespace trama {
+struct BiomeAssignment;
 class Database {
  public:
   explicit Database(const std::filesystem::path& path, bool read_only = false);
@@ -18,11 +19,15 @@ class Database {
   nlohmann::json regions() const;
   nlohmann::json coredes(const std::string& region = {}) const;
   nlohmann::json municipalities(const std::string& q = {}, const std::string& corede = {},
-                                const std::string& region = {}, int limit = 100, int offset = 0) const;
+                                const std::string& region = {}, int limit = 100, int offset = 0,
+                                const std::string& biome = {}, const std::string& criterion = "predominante") const;
   nlohmann::json municipality(const std::string& ibge) const;
   nlohmann::json biomes() const;
   nlohmann::json samples() const;
   nlohmann::json statistics() const;
+  bool predominant_biomes_complete() const;
+  void assign_predominant_biomes(const std::vector<BiomeAssignment>& assignments,
+                                 const std::filesystem::path& source);
   void export_json(const std::filesystem::path& output) const;
   sqlite3* handle() const { return db_; }
  private:

@@ -27,7 +27,7 @@ Reply api(Database& db,std::string target){
   auto ok=[&](json d,std::string c=""){return Reply{200,"application/json; charset=utf-8",json{{"data",d},{"meta",meta(d,c)}}.dump()};};
   auto err=[](int status,std::string code,std::string message){return Reply{status,"application/json; charset=utf-8",json{{"error",{{"code",code},{"message",message}}},{"meta",meta(nullptr)}}.dump()};};
   if(path=="/")return {200,"text/html; charset=utf-8",file(std::filesystem::path(TRAMA_SOURCE_DIR)/"web/index.html")};
-  if(path=="/v1/health")return ok({{"service","TRAMA-RS"},{"version",version},{"healthy",true},{"dataset_complete",false},{"status",preliminary_status}});
+  if(path=="/v1/health")return ok({{"service","TRAMA-RS"},{"version",version},{"healthy",true},{"bioma_predominante_completo",db.predominant_biomes_complete()},{"status",preliminary_status}});
   if(path=="/v1/catalogo")return ok(db.catalog());
   if(path=="/v1/regioes-funcionais")return ok(db.regions());
   if(path=="/v1/coredes")return ok(db.coredes());
@@ -43,12 +43,12 @@ Reply api(Database& db,std::string target){
   }
   if(path.starts_with("/v1/regioes-funcionais/")&&path.ends_with("/coredes")){constexpr std::string_view prefix="/v1/regioes-funcionais/";constexpr std::string_view suffix="/coredes";auto id=path.substr(prefix.size(),path.size()-prefix.size()-suffix.size());return ok(db.coredes(id));}
   if(path.starts_with("/v1/coredes/")&&path.ends_with("/municipios")){auto id=path.substr(12,path.size()-12-11);auto d=db.municipalities("",id,"",500,0);return ok(d);}
-  if(path.starts_with("/v1/biomas/")&&path.ends_with("/municipios"))return err(409,"dados_bioma_incompletos","495 de 497 municípios não possuem classificação de bioma verificada; consulte /v1/amostras apenas para os exemplos identificados");
+  if(path.starts_with("/v1/biomas/")&&path.ends_with("/municipios")){auto id=path.substr(12,path.size()-12-11);auto criterion=q.contains("criterio")?q["criterio"]:"predominante";if(criterion=="presenca")return err(409,"dados_bioma_incompletos","a relação de presença IBGE 2019 ainda não foi importada");if(criterion!="predominante")return err(400,"parametro_invalido","criterio deve ser predominante ou presenca");if(!db.predominant_biomes_complete())return err(409,"dados_bioma_incompletos","a classificação predominante ainda não cobre os 497 municípios");return ok(db.municipalities("","","",500,0,id,criterion),criterion);}
   if(path=="/v1/municipios"){
-    if(q.contains("bioma_id"))return err(409,"dados_bioma_incompletos","filtro por bioma indisponível no catálogo preliminar: 495 classificações pendentes");
+    auto criterion=q.contains("criterio")?q["criterio"]:"predominante";if(q.contains("bioma_id")&&criterion=="presenca")return err(409,"dados_bioma_incompletos","a relação de presença IBGE 2019 ainda não foi importada");if(q.contains("bioma_id")&&criterion!="predominante")return err(400,"parametro_invalido","criterio deve ser predominante ou presenca");if(q.contains("bioma_id")&&!db.predominant_biomes_complete())return err(409,"dados_bioma_incompletos","a classificação predominante ainda não cobre os 497 municípios");
     int limit=100,offset=0;try{if(q.contains("limit"))limit=std::stoi(q["limit"]);if(q.contains("offset"))offset=std::stoi(q["offset"]);}catch(...){return err(400,"parametro_invalido","limit e offset devem ser inteiros");}
     if(limit<1||limit>500||offset<0)return err(400,"parametro_invalido","limit deve estar entre 1 e 500 e offset não pode ser negativo");
-    return ok(db.municipalities(q["q"],q["corede_id"],q["regiao_funcional_id"],limit,offset));
+    return ok(db.municipalities(q["q"],q["corede_id"],q["regiao_funcional_id"],limit,offset,q["bioma_id"],criterion),q.contains("bioma_id")?criterion:"");
   }
   if(path.starts_with("/v1/municipios/")){auto d=db.municipality(path.substr(15));return d.is_null()?err(404,"recurso_nao_encontrado","município não encontrado"):ok(d);}
   return err(404,"recurso_nao_encontrado","rota não encontrada");

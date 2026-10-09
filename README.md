@@ -19,6 +19,7 @@ ctest --test-dir build --output-on-failure
 ./build/bin/trama seed --db ./data/trama.sqlite --data-dir ./data
 ./build/bin/trama validate --db ./data/trama.sqlite
 ./build/bin/trama export --db ./data/trama.sqlite --output ./data/export.json
+./build/bin/trama import --db ./data/trama.sqlite --ibge-csv ./raw/Bioma_Predominante_por_Municipio_2024.csv
 ./build/bin/trama-rsd --db ./data/trama.sqlite --host 0.0.0.0 --port 8080
 curl -fsS http://127.0.0.1:8080/v1/health
 ```
@@ -48,7 +49,7 @@ Municípios e biomas vêm das malhas oficiais IBGE 2025. COREDEs e Regiões Func
 - `trama-http`: API REST e arquivos locais do dashboard;
 - `trama`, `trama-rsd` e `trama-verify`: CLI, daemon e auditor independente.
 
-Os scripts em `legacy/python/` são históricos e nunca participam do build ou da operação. A importação de fontes oficiais XLSX/CSV ainda falha de forma fechada: ela somente será liberada depois que arquivos primários forem recebidos e fixtures sintéticas cobrirem reconciliação e rollback. Nenhuma informação ausente é inferida.
+Os scripts em `legacy/python/` são históricos e nunca participam do build ou da operação. O importador C++ aceita o CSV oficial de bioma predominante do IBGE 2024, reconhece delimitador e cabeçalho, concilia nomes sem acentos e exige os 497 geocódigos únicos do RS antes de alterar o banco. A atribuição é atômica: qualquer ausência, duplicação ou bioma desconhecido cancela toda a operação. A relação multivalorada de presença de biomas (IBGE 2019) continua indisponível até que seu importador próprio seja implementado; ela não é inferida a partir do bioma predominante.
 
 Documentos originais e precedência estão preservados em [`docs/INICIAR_AQUI_GEMINI.md`](docs/INICIAR_AQUI_GEMINI.md).
 
