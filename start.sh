@@ -17,5 +17,10 @@ if [[ ! -s "$database" ]]; then
   "$build_dir/bin/trama" seed --db "$database" --data-dir "$project_dir/data"
 fi
 
+if ! "$build_dir/bin/trama" validate --db "$database" | grep -q '"bioma_pendente": 0'; then
+  "$build_dir/bin/trama" import --db "$database" \
+    --ibge-csv "$project_dir/data/sources/Bioma_Predominante_por_Municipio_2024.csv"
+fi
+
 echo "TRAMA-RS: http://$host:$port"
 exec "$build_dir/bin/trama-rsd" --db "$database" --host "$host" --port "$port"

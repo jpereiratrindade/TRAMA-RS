@@ -1,6 +1,7 @@
 #include "trama/database.hpp"
 #include "trama/domain.hpp"
 #include "trama/importer.hpp"
+#include <cctype>
 #include <fstream>
 #include <stdexcept>
 #include <unordered_map>
@@ -16,6 +17,7 @@ struct Statement {
 json read_json(const std::filesystem::path& p) { std::ifstream f(p); if(!f) throw std::runtime_error("arquivo não encontrado: "+p.string()); return json::parse(f); }
 void bind_value(sqlite3_stmt* s,int n,const std::string& v){ auto rc=sqlite3_bind_text(s,n,v.c_str(),-1,SQLITE_TRANSIENT);if(rc!=SQLITE_OK)throw std::runtime_error("sqlite bind falhou: "+std::to_string(rc)); }
 std::string col(sqlite3_stmt* s,int n){ auto p=sqlite3_column_text(s,n); return p?reinterpret_cast<const char*>(p):""; }
+std::string municipality_key(const std::string& name){auto normalized=normalize_for_search(name);std::string key;bool space=false;for(unsigned char c:normalized){if(std::isalnum(c)){key+=static_cast<char>(c);space=false;}else if(!key.empty()&&!space){key+=' ';space=true;}}while(!key.empty()&&key.back()==' ')key.pop_back();return key;}
 json municipio_row(sqlite3_stmt* s) {
   json j={{"nome",col(s,1)},{"uf",col(s,2)},{"corede_id",col(s,3)},{"regiao_funcional_id",col(s,4)},
           {"classificacao_bioma_status",col(s,7)}};
@@ -81,8 +83,8 @@ json Database::statistics() const {return validate()["contagens"];}
 bool Database::predominant_biomes_complete() const {Statement s(db_,"SELECT count(*)=497 AND count(bioma_predominante_id)=497 AND count(codigo_ibge)=497 FROM municipio");return sqlite3_step(s.p)==SQLITE_ROW&&sqlite3_column_int(s.p,0)==1;}
 void Database::assign_predominant_biomes(const std::vector<BiomeAssignment>& assignments,const std::filesystem::path& source){
   if(assignments.size()!=497)throw std::runtime_error("a importação exige exatamente 497 atribuições");
-  std::unordered_map<std::string,BiomeAssignment> by_name;for(const auto& x:assignments){auto key=normalize_for_search(x.municipio);if(key.empty()||!by_name.emplace(key,x).second)throw std::runtime_error("IBGE 2024: nome municipal ausente ou duplicado: "+x.municipio);}
-  Statement current(db_,"SELECT nome FROM municipio ORDER BY nome");std::vector<std::pair<std::string,BiomeAssignment>> reconciled;while(sqlite3_step(current.p)==SQLITE_ROW){auto name=col(current.p,0);auto it=by_name.find(normalize_for_search(name));if(it==by_name.end())throw std::runtime_error("IBGE 2024: município não conciliado: "+name);reconciled.emplace_back(name,it->second);}
+  std::unordered_map<std::string,BiomeAssignment> by_name;for(const auto& x:assignments){auto key=municipality_key(x.municipio);if(key.empty()||!by_name.emplace(key,x).second)throw std::runtime_error("IBGE 2024: nome municipal ausente ou duplicado: "+x.municipio);}
+  Statement current(db_,"SELECT nome FROM municipio ORDER BY nome");std::vector<std::pair<std::string,BiomeAssignment>> reconciled;while(sqlite3_step(current.p)==SQLITE_ROW){auto name=col(current.p,0);auto it=by_name.find(municipality_key(name));if(it==by_name.end())throw std::runtime_error("IBGE 2024: município não conciliado: "+name);reconciled.emplace_back(name,it->second);}
   if(reconciled.size()!=497)throw std::runtime_error("catálogo local não contém 497 municípios");
   exec("BEGIN IMMEDIATE");try{exec("UPDATE municipio SET codigo_ibge=NULL");Statement update(db_,"UPDATE municipio SET codigo_ibge=?,bioma_predominante_id=?,classificacao_bioma_status='predominante_ibge_2024_verificado' WHERE nome=?");for(const auto& [name,x]:reconciled){bind_value(update.p,1,x.codigo_ibge);bind_value(update.p,2,x.bioma_id);bind_value(update.p,3,name);if(sqlite3_step(update.p)!=SQLITE_DONE||sqlite3_changes(db_)!=1)throw std::runtime_error("falha ao atribuir bioma a "+name);sqlite3_reset(update.p);sqlite3_clear_bindings(update.p);}Statement src(db_,"INSERT INTO source(payload_json) VALUES(?)");json payload={{"tipo","bioma_predominante_ibge"},{"ano_referencia",2024},{"arquivo",source.string()}};bind_value(src.p,1,payload.dump());if(sqlite3_step(src.p)!=SQLITE_DONE)throw std::runtime_error(sqlite3_errmsg(db_));exec("INSERT OR REPLACE INTO metadata VALUES('dataset_version','0.2.0');INSERT OR REPLACE INTO metadata VALUES('bioma_predominante_status','COMPLETO_IBGE_2024');INSERT INTO audit_event(event) VALUES('import_bioma_predominante_ibge_2024');COMMIT");}catch(...){exec("ROLLBACK");throw;}
 }

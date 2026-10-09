@@ -14,7 +14,7 @@ ctest --test-dir build --output-on-failure
 
 ## Executar
 
-Forma simples — compila, cria o banco na primeira execução e inicia o serviço:
+Forma simples — compila, cria/atualiza o banco com os biomas predominantes oficiais e inicia o serviço:
 
 ```sh
 ./start.sh
